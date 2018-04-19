@@ -1,0 +1,231 @@
+// 顏色定義
+$color_deeppurple: #240024 
+$color_purple: #44134A
+$color_yellow: #FFF67A
+
+*
+	// border: solid 1px black
+	padding: 0
+	margin: 0
+	font-family: 'Crimson Text', serif, 微軟正黑體
+	vertical-align: top
+html,body
+	padding: 0
+	margin: 0
+	border: none
+
+// 左邊紫色區塊
+.leftsection
+	width: 400px
+	color: white
+	margin: 0
+	padding: 0
+	position: absolute
+
+	.top
+		height: 260px
+		background-color: $color_deeppurple
+		.headpic
+			background-color: $color_yellow
+			display: block
+			top: 30px
+			left: 50%
+			transform: translateX(-50%)
+			position: relative
+			width: 120px
+			height: 120px
+			border: solid 5px $color_yellow
+			border-radius: 100%
+			padding: 0
+			overflow: hidden
+			box-sizing: border-box
+			box-shadow: 0px 0px 10px white
+			img
+				width: 100%
+				display: block
+				text-align: center
+				border: none
+		.name
+			display: block
+			text-align: center
+			position: relative
+			top: 50px
+			p.chi,p.eng
+				color: white
+				letter-spacing: 1px
+			p.chi
+				font-weight: 600
+				font-size: 24px
+			p.eng
+				font-size: 18px
+
+	.bottom
+		height: 820px
+		background-image: -webkit-linear-gradient(bottom,#0C000D, $color_purple)
+		background-image: -moz-linear-gradient(bottom,#0C000D, $color_purple)
+		background-image: -o-linear-gradient(bottom,#0C000D, $color_purple)
+		background-image: linear-gradient(bottom,#0C000D, $color_purple)
+		p.title
+			font-size: 20px
+			padding: 15px 20px
+			color: $color_yellow
+			font-weight: 900
+			text-shadow: 0px 0px 10px white
+
+		.about
+			height: 170px
+			p.content
+				padding: 5px 35px
+				font-size: 16px
+		.contact
+			height: 160px
+			font-size: 20px
+
+			.email,.phone
+				padding: 5px 35px
+				.icon,p
+					display: inline-block
+					line-height: 40px
+				.icon
+					width: 40px
+					height: 40px
+					text-align: center
+					background-color: $color_deeppurple
+					border-radius: 100%
+					margin-right: 10px
+					i
+						position: relative
+						top: 23%
+					i.fa.fa-phone
+						top: 30%
+		.skills
+			font-size: 20px
+
+			.html,.css,.js,.design
+				padding: 5px 35px
+				.icon,p
+					display: inline-block
+					line-height: 40px
+				.icon
+					width: 40px
+					height: 40px
+					text-align: center
+					background-color: $color_deeppurple
+					border-radius: 100%
+					margin-right: 10px
+
+					i
+						position: relative
+						top: 23%
+				.progress
+					padding: 0
+					margin: 5px 0px
+					height: 7px
+					background-image: -webkit-linear-gradient(left,$color_yellow, rgba($color_purple,0))
+					background-image: -moz-linear-gradient(left,$color_yellow, rgba($color_purple,0))
+					background-image: -o-linear-gradient(left,$color_yellow, rgba($color_purple,0))
+					background-image: linear-gradient(left,$color_yellow, rgba($color_purple,0))
+				.progress.html
+					width: 250px
+				.progress.css
+					width: 200px
+				.progress.js
+					width: 100px
+				.progress.design
+					width: 300px
+
+// 右邊作品展示區塊
+.rightsection
+	position: absolute
+	display: block
+	right: 0
+	top: 0
+	width: calc(100% - 400px)
+	height: 1080px
+	background-image: url(../../img/bgd.png)
+	background-repeat: no-repeat
+	background-position: center
+
+	.windows
+		position: relative
+		width: 65%
+		height: auto
+		margin: auto
+
+		p.title
+			font-size: 40px
+			padding: 15px 30px
+			padding-top: 20px
+			color: $color_purple
+			font-weight: 900
+			text-shadow: 0px 0px 12px white
+
+		.showbox
+			position: relative
+			display: inline-block
+			height: 420px
+			margin-left: 20px
+			margin-bottom: 10px
+			width: calc(50% - 40px)
+			min-width: 200px
+
+			.window
+				position: relative
+				height: 320px
+				border-radius: 8px
+				overflow: hidden
+				box-sizing: border-box
+				box-shadow: 0px 5px 15px #888
+				text-align: center
+
+				img
+					position: absolute
+					top: 0
+					left: 0
+					right: 0
+					bottom: 0
+					width: auto
+					height: 100%
+					margin: auto
+					transition: 0.2s
+					background-color: $color_purple
+					&:hover
+						transition: 0.2s
+						height: 120%
+						transform: translateX(-9%)
+						mix-blend-mode: hard-light
+			p.workname
+				position: relative
+				padding: 5px
+				font-size: 20px
+				font-weight: 900
+				height: 28px
+				display: block
+				color: $color_purple
+				text-shadow: 0px 0px 12px white
+				text-align: center
+				line-height: 28px
+				padding-top: 10px
+			p.content
+				font-size: 15px
+				text-align: center
+				diaplay: block
+				color: $color_deeppurple
+
+	.bottomsection
+		display: block
+		position: absolute
+		bottom: 0
+		width: 100%
+		height: 50px
+		background-image: -webkit-linear-gradient(left,#0C000D, $color_purple)
+		background-image: -moz-linear-gradient(left,#0C000D, $color_purple)
+		background-image: -o-linear-gradient(left,#0C000D, $color_purple)
+		background-image: linear-gradient(left,#0C000D, $color_purple)
+		box-sizing: border-box
+		p.copyright
+			font-size: 14px
+			color: $color_yellow
+			text-shadow: 0px 0px 10px white
+			line-height: 50px
+			text-align: center

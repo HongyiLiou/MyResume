@@ -1,0 +1,99 @@
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible" content="ie=edge")
+		title Hong-yi Liou履歷表
+		// jQuery文件
+		script(src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js")
+		// font awesome
+		link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css")
+		// html5shiv CDN
+		//if lt IE 9
+			script(src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js")
+		// custom stylesheets
+		link(rel="stylesheet" href="./assets/css/main.css")
+		// Google fonts
+		link(href="https://fonts.googleapis.com/css?family=Crimson+Text:400,600,700" rel="stylesheet")
+
+body
+	.leftsection#leftsection
+		.top
+			.headpic
+				img(src="./img/head.png", alt="")
+			.name
+				p.chi 劉弘翊
+				p.eng Hong-yi Liou
+
+		.bottom
+			.about
+				p.title ABOUT ME
+				p.content 熱愛音樂，樂於學習新技術。喜歡一點一滴累積完成一首曲子、一幅影像、一個網頁的成就感。好溝通、善於配合。社會新鮮人、網頁前端初心者。
+			.contact
+				p.title CONTACT ME
+				.email
+					.icon
+						i.fa.fa-envelope-o
+					p t30034a7@gmail.com
+				.phone
+					.icon
+						i.fa.fa-phone
+					p 0925-518-508
+			.skills
+				p.title MY SKILLS
+				.html
+					.icon
+						i.fa.fa-cog
+					p HTML5 / Pug
+					.progress.html
+				.css
+					.icon
+						i.fa.fa-th-large
+					p CSS3 / Sass
+					.progress.css
+				.js
+					.icon
+						i.fa.fa-play-circle-o
+					p JavaScript / jQuery
+					.progress.js
+				.design
+					.icon
+						i.fa.fa-picture-o
+					p Photoshop / Illustrator
+					.progress.design
+
+	.rightsection#rightsection
+		.windows
+			p.title WORKS
+			.showbox
+				.window
+					a(href="https://hongyiliou.github.io/guitarstory/guitarstory-skrollr" target="_blank")
+						img(src="./img/guitarstory.png", alt="")
+				p.workname GuitarStory (Bootstrap)
+				p.content 應用 Bootstrap(CSS框架) 結合 Skrollr.js 製作捲動式網頁。
+			.showbox
+				.window
+					a(href="https://hongyiliou.github.io/RWD_FBpage/RWD_FBpage" target="_blank")
+						img(src="./img/RWD_FBpage.png", alt="")
+				p.workname Facebook page (RWD)
+				p.content 使用 CSS Media Queries 模仿臉書帳號頁面桌面/手機版變化製作 RWD 網頁。
+			.showbox
+				.window
+					a(href="https://hongyiliou.github.io/iphones/iphones" target="_blank")
+						img(src="./img/iphone.png", alt="")
+				p.workname iPhones
+				p.content 使用 jQuery 切換 Class/CSS 製作，模擬手機切換型號/頁面。
+			.showbox
+				.window
+					a(href="https://hongyiliou.github.io/weatherbox/weatherbox" target="_blank")
+						img(src="./img/weatherbox.png", alt="")
+				p.workname WeatherBox 天氣盒子
+				p.content 以 CSS 刻出動態互動天氣盒子(滑鼠移入/點擊互動)，並利用 jQuery 呈現現實時間。
+		.bottomsection
+			p.copyright Copyright © 2018 Hong-yi Liou All rights reserved.
+
+
+
+
+
+	script(type="text/javascript" src="./assets/js/main.js")
