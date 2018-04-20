@@ -136,7 +136,7 @@ html, body {
   top: 0;
   width: calc(100% - 360px);
   height: 1080px;
-  background-image: url(../../img/bgd.png);
+  background-image: url(../../img/bgd.jpg);
   background-repeat: no-repeat;
   background-position: center; }
   .rightsection .windows {
@@ -237,16 +237,16 @@ html, body {
     width: 100%; }
     .leftsection .bottom {
       height: auto;
-      padding: 20px 25px; }
+      padding: 20px 10px; }
       .leftsection .bottom p.title {
         font-size: 20px;
         margin-top: 20px;
         text-align: center; }
       .leftsection .bottom .about, .leftsection .bottom .contact, .leftsection .bottom .skills {
         width: 100%;
-        font-size: 15px; }
+        font-size: 18px; }
         .leftsection .bottom .about p.content, .leftsection .bottom .contact p.content, .leftsection .bottom .skills p.content {
-          font-size: 12px; }
+          font-size: 14px; }
       .leftsection .bottom .contact {
         height: 200px; }
       .leftsection .bottom .skills {
@@ -265,17 +265,17 @@ html, body {
     height: auto;
     right: initial;
     top: initial;
-    background-image: url(../../img/bgm.png);
+    background-image: url(../../img/bgm.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 120%;
+    background-size: 150%;
     padding: 0; }
     .rightsection .windows {
       margin: auto;
       width: 80%;
       min-width: initial;
       padding: 0;
-      max-width: 300px; }
+      max-width: 280px; }
       .rightsection .windows .showbox {
         width: 100%;
         height: auto;
@@ -283,7 +283,7 @@ html, body {
         min-width: initial;
         margin: auto; }
         .rightsection .windows .showbox .window {
-          height: 170px; }
+          height: 180px; }
           .rightsection .windows .showbox .window img {
             width: 100%;
             height: auto; }
@@ -292,9 +292,9 @@ html, body {
               -ms-transform: initial;
               transform: initial; }
         .rightsection .windows .showbox p.workname {
-          font-size: 18px; }
+          font-size: 20px; }
         .rightsection .windows .showbox p.content {
-          font-size: 12px; }
+          font-size: 14px; }
     .rightsection .bottomsection {
       position: relative; }
       .rightsection .bottomsection p.copyright {
