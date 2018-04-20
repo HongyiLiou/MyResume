@@ -16,6 +16,7 @@ html,body
 	margin: 0
 	border: none
 
+// --------------------桌面版樣式--------------------
 // 左邊紫色區塊
 .leftsection
 	width: $rightw
@@ -168,7 +169,7 @@ html,body
 			height: 420px
 			margin-left: 35px
 			margin-bottom: 10px
-			width: calc(50% - 85px)
+			width: calc(50% - 90px)
 			min-width: 200px
 
 			.window
@@ -196,6 +197,8 @@ html,body
 						height: 120%
 						transform: translateX(-9%)
 						mix-blend-mode: hard-light
+					&:active
+						mix-blend-mode: darken
 			p.workname
 				position: relative
 				padding: 5px
@@ -231,3 +234,79 @@ html,body
 			text-shadow: 0px 0px 10px white
 			line-height: 50px
 			text-align: center
+
+
+// --------------------行動版樣式--------------------
+@media screen and (max-width: 1180px)
+	*
+		// border: solid 1px
+	.leftsection
+		position: relative
+		width: 100%
+		.bottom
+			height: auto
+			padding: 20px 25px
+			p.title
+				font-size: 20px
+				margin-top: 20px
+				text-align: center
+
+			.about,.contact,.skills
+				width: 100%
+				font-size: 15px
+				p.content
+					font-size: 12px
+			.contact
+				height: 200px
+			.skills
+				height: 400px
+				.html,.css,.js,.design
+					.progress.html
+						width: calc(100% - 200px*3/8)
+					.progress.css
+						width: calc(100% - 250px*3/8)
+					.progress.js
+						width: calc(100% - 300px*9/20)
+					.progress.design
+						width: calc(100% - 100px*3/8)
+
+
+	.rightsection
+		position: relative
+		width: 100%
+		height: auto
+		right: initial
+		top: initial
+		background-image: url(../../img/bgm.png)
+		background-repeat: no-repeat
+		background-position: center
+		background-size: 120%
+		padding: 0
+		.windows
+			margin: auto
+			width: 80%
+			min-width: initial
+			padding: 0
+			max-width: 300px
+			.showbox
+				width: 100%
+				height: auto
+				padding-bottom: 20px
+				min-width: initial
+				margin: auto
+				.window
+					height: 170px
+					img
+						width: 100%
+						height: auto
+						&:hover
+							transform: initial
+				p.workname
+					font-size: 18px
+				p.content
+					font-size: 12px
+
+		.bottomsection
+			position: relative
+			p.copyright
+				font-size: 12px
