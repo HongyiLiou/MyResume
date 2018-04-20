@@ -2,6 +2,8 @@
 $color_deeppurple: #240024 
 $color_purple: #44134A
 $color_yellow: #FFF67A
+// 寬度定義
+$rightw: 360px
 
 *
 	// border: solid 1px black
@@ -16,7 +18,7 @@ html,body
 
 // 左邊紫色區塊
 .leftsection
-	width: 400px
+	width: $rightw
 	color: white
 	margin: 0
 	padding: 0
@@ -140,7 +142,7 @@ html,body
 	display: block
 	right: 0
 	top: 0
-	width: calc(100% - 400px)
+	width: calc(100% - 360px)
 	height: 1080px
 	background-image: url(../../img/bgd.png)
 	background-repeat: no-repeat
@@ -148,10 +150,10 @@ html,body
 
 	.windows
 		position: relative
-		width: 65%
+		width: 70%
 		height: auto
 		margin: auto
-
+		min-width: 800px
 		p.title
 			font-size: 40px
 			padding: 15px 30px
@@ -164,9 +166,9 @@ html,body
 			position: relative
 			display: inline-block
 			height: 420px
-			margin-left: 20px
+			margin-left: 35px
 			margin-bottom: 10px
-			width: calc(50% - 40px)
+			width: calc(50% - 85px)
 			min-width: 200px
 
 			.window
