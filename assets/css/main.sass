@@ -1,15 +1,15 @@
 // 顏色定義
 $color_deeppurple: #240024 
 $color_purple: #44134A
-$color_yellow: #FFF67A
+$color_yellow: #FFFBC2
 // 寬度定義
 $rightw: 360px
 
 *
-	// border: solid 1px black
+	border: solid 1px black
 	padding: 0
 	margin: 0
-	font-family: 'Crimson Text', serif, 微軟正黑體
+	font-family: 'Crimson Text', serif, 'Yantramanav', sans-serif, 微軟正黑體
 	vertical-align: top
 html,body
 	padding: 0
@@ -80,6 +80,7 @@ html,body
 			p.content
 				padding: 5px 35px
 				font-size: 16px
+				text-indent: 32px
 		.contact
 			height: 160px
 			font-size: 20px
@@ -89,13 +90,17 @@ html,body
 				.icon,p
 					display: inline-block
 					line-height: 40px
+				p
+					font-family: 'Yantramanav'
+					letter-spacing: 1px
+					font-size: 17px
 				.icon
 					width: 40px
 					height: 40px
 					text-align: center
 					background-color: $color_deeppurple
 					border-radius: 100%
-					margin-right: 10px
+					margin-right: 4px
 					i
 						position: relative
 						top: 23%
@@ -109,13 +114,18 @@ html,body
 				.icon,p
 					display: inline-block
 					line-height: 40px
+				p
+					font-family: 'Yantramanav'
+					font-weight: 300
+					font-size: 17px
+					letter-spacing: 1px
 				.icon
 					width: 40px
 					height: 40px
 					text-align: center
 					background-color: $color_deeppurple
 					border-radius: 100%
-					margin-right: 10px
+					margin-right: 4px
 
 					i
 						position: relative
@@ -235,6 +245,83 @@ html,body
 			line-height: 50px
 			text-align: center
 
+@keyframes gototop
+	0%
+		bottom: 50px
+		box-shadow: 0px 0px 10px white
+	25%
+		box-shadow: 0px 0px 15px white
+	50%
+		bottom: 60px
+		box-shadow: 0px 0px 10px white
+	75%
+		box-shadow: 0px 0px 15px white
+	100%
+		bottom: 50px
+		box-shadow: 0px 0px 10px white
+@-moz-keyframes gototop /* Firefox */
+	0%
+		bottom: 50px
+		box-shadow: 0px 0px 10px white
+	25%
+		box-shadow: 0px 0px 15px white
+	50%
+		bottom: 60px
+		box-shadow: 0px 0px 10px white
+	75%
+		box-shadow: 0px 0px 15px white
+	100%
+		bottom: 50px
+		box-shadow: 0px 0px 10px white
+@-webkit-keyframes gototop /* Safari 和 Chrome */
+	0%
+		bottom: 50px
+		box-shadow: 0px 0px 10px white
+	25%
+		box-shadow: 0px 0px 15px white
+	50%
+		bottom: 60px
+		box-shadow: 0px 0px 10px white
+	75%
+		box-shadow: 0px 0px 15px white
+	100%
+		bottom: 50px
+		box-shadow: 0px 0px 10px white
+@-o-keyframes gototop /* Opera */
+	0%
+		bottom: 50px
+		box-shadow: 0px 0px 10px white
+	25%
+		box-shadow: 0px 0px 15px white
+	50%
+		bottom: 60px
+		box-shadow: 0px 0px 10px white
+	75%
+		box-shadow: 0px 0px 15px white
+	100%
+		bottom: 50px
+		box-shadow: 0px 0px 10px white
+
+
+.gototop
+	position: fixed
+	display: none
+	color: $color_yellow
+	background-color: $color_purple
+	right: 12px
+	bottom: 50px
+	border-radius: 100%
+	padding: 12px 5px
+	box-sizing: border-box
+	box-shadow: 0px 0px 10px white
+	animation: gototop 3s infinite
+	&:active
+		background-color: $color_deeppurple
+		color: white
+	p
+		font-size: 14px
+		text-align: center
+
 
 // --------------------行動版樣式--------------------
 @media screen and (max-width: 1180px)
@@ -310,3 +397,5 @@ html,body
 			position: relative
 			p.copyright
 				font-size: 12px
+	.gototop
+		display: block

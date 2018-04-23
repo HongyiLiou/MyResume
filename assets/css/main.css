@@ -1,8 +1,9 @@
 @charset "UTF-8";
 * {
+  border: solid 1px black;
   padding: 0;
   margin: 0;
-  font-family: 'Crimson Text', serif, 微軟正黑體;
+  font-family: 'Crimson Text', serif, 'Yantramanav', sans-serif, 微軟正黑體;
   vertical-align: top; }
 
 html, body {
@@ -20,7 +21,7 @@ html, body {
     height: 260px;
     background-color: #240024; }
     .leftsection .top .headpic {
-      background-color: #FFF67A;
+      background-color: #FFFBC2;
       display: block;
       top: 30px;
       left: 50%;
@@ -30,7 +31,7 @@ html, body {
       position: relative;
       width: 120px;
       height: 120px;
-      border: solid 5px #FFF67A;
+      border: solid 5px #FFFBC2;
       border-radius: 100%;
       padding: 0;
       overflow: hidden;
@@ -66,14 +67,15 @@ html, body {
     .leftsection .bottom p.title {
       font-size: 20px;
       padding: 15px 20px;
-      color: #FFF67A;
+      color: #FFFBC2;
       font-weight: 900;
       text-shadow: 0px 0px 10px white; }
     .leftsection .bottom .about {
       height: 170px; }
       .leftsection .bottom .about p.content {
         padding: 5px 35px;
-        font-size: 16px; }
+        font-size: 16px;
+        text-indent: 32px; }
     .leftsection .bottom .contact {
       height: 160px;
       font-size: 20px; }
@@ -82,13 +84,17 @@ html, body {
         .leftsection .bottom .contact .email .icon, .leftsection .bottom .contact .email p, .leftsection .bottom .contact .phone .icon, .leftsection .bottom .contact .phone p {
           display: inline-block;
           line-height: 40px; }
+        .leftsection .bottom .contact .email p, .leftsection .bottom .contact .phone p {
+          font-family: 'Yantramanav';
+          letter-spacing: 1px;
+          font-size: 17px; }
         .leftsection .bottom .contact .email .icon, .leftsection .bottom .contact .phone .icon {
           width: 40px;
           height: 40px;
           text-align: center;
           background-color: #240024;
           border-radius: 100%;
-          margin-right: 10px; }
+          margin-right: 4px; }
           .leftsection .bottom .contact .email .icon i, .leftsection .bottom .contact .phone .icon i {
             position: relative;
             top: 23%; }
@@ -101,13 +107,18 @@ html, body {
         .leftsection .bottom .skills .html .icon, .leftsection .bottom .skills .html p, .leftsection .bottom .skills .css .icon, .leftsection .bottom .skills .css p, .leftsection .bottom .skills .js .icon, .leftsection .bottom .skills .js p, .leftsection .bottom .skills .design .icon, .leftsection .bottom .skills .design p {
           display: inline-block;
           line-height: 40px; }
+        .leftsection .bottom .skills .html p, .leftsection .bottom .skills .css p, .leftsection .bottom .skills .js p, .leftsection .bottom .skills .design p {
+          font-family: 'Yantramanav';
+          font-weight: 300;
+          font-size: 17px;
+          letter-spacing: 1px; }
         .leftsection .bottom .skills .html .icon, .leftsection .bottom .skills .css .icon, .leftsection .bottom .skills .js .icon, .leftsection .bottom .skills .design .icon {
           width: 40px;
           height: 40px;
           text-align: center;
           background-color: #240024;
           border-radius: 100%;
-          margin-right: 10px; }
+          margin-right: 4px; }
           .leftsection .bottom .skills .html .icon i, .leftsection .bottom .skills .css .icon i, .leftsection .bottom .skills .js .icon i, .leftsection .bottom .skills .design .icon i {
             position: relative;
             top: 23%; }
@@ -115,11 +126,11 @@ html, body {
           padding: 0;
           margin: 5px 0px;
           height: 7px;
-          background-image: -webkit-linear-gradient(left, #FFF67A, rgba(68, 19, 74, 0));
-          background-image: -moz-linear-gradient(left, #FFF67A, rgba(68, 19, 74, 0));
-          background-image: -o-linear-gradient(left, #FFF67A, rgba(68, 19, 74, 0));
-          background-image: -webkit-gradient(linear, left top, right top, from(#FFF67A), to(rgba(68, 19, 74, 0)));
-          background-image: linear-gradient(left, #FFF67A, rgba(68, 19, 74, 0)); }
+          background-image: -webkit-linear-gradient(left, #FFFBC2, rgba(68, 19, 74, 0));
+          background-image: -moz-linear-gradient(left, #FFFBC2, rgba(68, 19, 74, 0));
+          background-image: -o-linear-gradient(left, #FFFBC2, rgba(68, 19, 74, 0));
+          background-image: -webkit-gradient(linear, left top, right top, from(#FFFBC2), to(rgba(68, 19, 74, 0)));
+          background-image: linear-gradient(left, #FFFBC2, rgba(68, 19, 74, 0)); }
         .leftsection .bottom .skills .html .progress.html, .leftsection .bottom .skills .css .progress.html, .leftsection .bottom .skills .js .progress.html, .leftsection .bottom .skills .design .progress.html {
           width: 250px; }
         .leftsection .bottom .skills .html .progress.css, .leftsection .bottom .skills .css .progress.css, .leftsection .bottom .skills .js .progress.css, .leftsection .bottom .skills .design .progress.css {
@@ -226,10 +237,102 @@ html, body {
     box-sizing: border-box; }
     .rightsection .bottomsection p.copyright {
       font-size: 14px;
-      color: #FFF67A;
+      color: #FFFBC2;
       text-shadow: 0px 0px 10px white;
       line-height: 50px;
       text-align: center; }
+
+@keyframes gototop {
+  0% {
+    bottom: 50px;
+    -webkit-box-shadow: 0px 0px 10px white;
+    box-shadow: 0px 0px 10px white; }
+  25% {
+    -webkit-box-shadow: 0px 0px 15px white;
+    box-shadow: 0px 0px 15px white; }
+  50% {
+    bottom: 60px;
+    -webkit-box-shadow: 0px 0px 10px white;
+    box-shadow: 0px 0px 10px white; }
+  75% {
+    -webkit-box-shadow: 0px 0px 15px white;
+    box-shadow: 0px 0px 15px white; }
+  100% {
+    bottom: 50px;
+    -webkit-box-shadow: 0px 0px 10px white;
+    box-shadow: 0px 0px 10px white; } }
+
+@-moz-keyframes gototop /* Firefox */ {
+  0% {
+    bottom: 50px;
+    box-shadow: 0px 0px 10px white; }
+  25% {
+    box-shadow: 0px 0px 15px white; }
+  50% {
+    bottom: 60px;
+    box-shadow: 0px 0px 10px white; }
+  75% {
+    box-shadow: 0px 0px 15px white; }
+  100% {
+    bottom: 50px;
+    box-shadow: 0px 0px 10px white; } }
+
+@-webkit-keyframes gototop /* Safari 和 Chrome */ {
+  0% {
+    bottom: 50px;
+    -webkit-box-shadow: 0px 0px 10px white;
+    box-shadow: 0px 0px 10px white; }
+  25% {
+    -webkit-box-shadow: 0px 0px 15px white;
+    box-shadow: 0px 0px 15px white; }
+  50% {
+    bottom: 60px;
+    -webkit-box-shadow: 0px 0px 10px white;
+    box-shadow: 0px 0px 10px white; }
+  75% {
+    -webkit-box-shadow: 0px 0px 15px white;
+    box-shadow: 0px 0px 15px white; }
+  100% {
+    bottom: 50px;
+    -webkit-box-shadow: 0px 0px 10px white;
+    box-shadow: 0px 0px 10px white; } }
+
+@-o-keyframes gototop /* Opera */ {
+  0% {
+    bottom: 50px;
+    box-shadow: 0px 0px 10px white; }
+  25% {
+    box-shadow: 0px 0px 15px white; }
+  50% {
+    bottom: 60px;
+    box-shadow: 0px 0px 10px white; }
+  75% {
+    box-shadow: 0px 0px 15px white; }
+  100% {
+    bottom: 50px;
+    box-shadow: 0px 0px 10px white; } }
+
+.gototop {
+  position: fixed;
+  display: none;
+  color: #FFFBC2;
+  background-color: #44134A;
+  right: 12px;
+  bottom: 50px;
+  border-radius: 100%;
+  padding: 12px 5px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-shadow: 0px 0px 10px white;
+  box-shadow: 0px 0px 10px white;
+  -webkit-animation: gototop 3s infinite;
+  animation: gototop 3s infinite; }
+  .gototop:active {
+    background-color: #240024;
+    color: white; }
+  .gototop p {
+    font-size: 14px;
+    text-align: center; }
 
 @media screen and (max-width: 1180px) {
   .leftsection {
@@ -298,4 +401,6 @@ html, body {
     .rightsection .bottomsection {
       position: relative; }
       .rightsection .bottomsection p.copyright {
-        font-size: 12px; } }
+        font-size: 12px; }
+  .gototop {
+    display: block; } }
