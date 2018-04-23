@@ -316,8 +316,8 @@ html, body {
   display: none;
   color: #FFFBC2;
   background-color: #44134A;
-  right: 12px;
-  bottom: 50px;
+  margin-left: 87%;
+  margin-bottom: 50px;
   border-radius: 100%;
   padding: 12px 5px;
   -webkit-box-sizing: border-box;
