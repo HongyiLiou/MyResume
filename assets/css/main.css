@@ -339,7 +339,12 @@ html, body {
     width: 100%; }
     .leftsection .bottom {
       height: auto;
-      padding: 20px 10px; }
+      padding: 20px 10px;
+      background-image: -webkit-linear-gradient(bottom, #240024, #44134A);
+      background-image: -moz-linear-gradient(bottom, #240024, #44134A);
+      background-image: -o-linear-gradient(bottom, #240024, #44134A);
+      background-image: -webkit-gradient(linear, left bottom, left top, from(#240024), to(#44134A));
+      background-image: linear-gradient(bottom, #240024, #44134A); }
       .leftsection .bottom p.title {
         font-size: 20px;
         margin-top: 20px;
