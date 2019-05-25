@@ -1,0 +1,61 @@
+// * Basic settings */
+
+*
+    // font-family: 'Italianno', cursive, '微軟正黑體'
+    font-family: '微軟正黑體'
+    box-sizing: border-box
+    // user-select: none
+    ul,li
+        list-style: none
+        margin: 0
+        padding: 0
+input,button
+    border: none
+    outline: none
+html,body
+	margin: 0
+	padding: 0
+	width: 100%
+ul,li
+	list-style: none
+	margin: 0
+	padding: 0
+
+// * variable */
+
+// * Mixins */
+@mixin clearfix()
+  &::after    
+    display: block
+    content: ""
+    clear: both
+
+@mixin ab_center
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+
+@mixin size($w,$h)
+    width: $w
+    height: $h
+
+// * Animations */
+@keyframes navBtns
+    0%
+        opacity: 1
+        transform: translate(-50%, -50%) scale(1, 1)
+    40%
+        opacity: 1
+        transform: translate(-50%, -50%) scale(8, 8)
+    100%
+        opacity: 0
+        transform: translate(-50%, -50%) scale(8, 8)
+
+@keyframes contactArea
+    0%
+        transform: rotate(-4deg) translate(0px, 0px)
+    50%
+        transform: rotate(-4deg) translate(3px, -20px)
+    100%
+        transform: rotate(-4deg) translate(0px, 0px)

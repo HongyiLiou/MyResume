@@ -1,104 +1,97 @@
-
-<html lang="en">
-  <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>Hong-yi Liou履歷表</title>
-    <!-- jQuery文件-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
-    <!-- font awesome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
-    <!-- html5shiv CDN-->
-    <!--if lt IE 9script(src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js")
-    -->
-    <!-- custom stylesheets-->
-    <link rel="stylesheet" href="./assets/css/main.css"/>
-    <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,600,700" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css?family=Yantramanav:300,400,700" rel="stylesheet"/>
-  </head>
-</html>
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+  <meta charset="UTF-8"/>
+  <link rel="stylesheet" type="text/css" href="css/main.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
+  <title>劉弘翊 Hong-Yi Liou | Front-end Developer</title>
+</head>
 <body>
-  <div class="leftsection" id="leftsection">
-    <div class="top">
-      <div class="headpic"><img src="./img/head.jpg" alt=""/></div>
-      <div class="name">
-        <p class="chi">劉弘翊</p>
-        <p class="eng">Hong-yi Liou</p>
+  <header class="header">
+    <div class="background"></div>
+    <div class="container">
+      <div class="header_content"><a href="https://hongyiliou.github.io/MyResume">Hong-Yi Liou</a>
+        <ul class="nav">
+          <li class="navBtn">關於我</li>
+          <li class="navBtn">作品集</li>
+          <li class="navBtn">聯繫我</li>
+          <li class="navBtn">履歷表</li>
+        </ul>
       </div>
     </div>
-    <div class="bottom">
-      <div class="about">
-        <p class="title">ABOUT ME</p>
-        <p class="content">熱愛音樂，樂於學習新技術。喜歡一點一滴累積完成一首曲子、一幅影像、一個網頁的成就感。好溝通、善於配合。社會新鮮人、網頁前端初心者。</p>
+  </header>
+  <div class="head">
+    <div class="me">
+      <div class="me_border"></div>
+      <div class="textArea">
+        <h1>劉弘翊 ｜ Hong-Yi Liou</h1><span>Front-end Developer、Acoustic Guitarist</span>
       </div>
-      <div class="contact">
-        <p class="title">CONTACT ME</p>
-        <div class="email">
-          <div class="icon"><i class="fa fa-envelope-o"></i></div>
-          <p>t30034a7@gmail.com</p>
-        </div>
-        <div class="phone">
-          <div class="icon"><i class="fa fa-phone"></i></div>
-          <p>0925-518-508</p>
-        </div>
-      </div>
-      <div class="skills">
-        <p class="title">MY SKILLS</p>
-        <div class="html">
-          <div class="icon"><i class="fa fa-cog"></i></div>
-          <p>HTML5 / Pug</p>
-          <div class="progress html"></div>
-        </div>
-        <div class="css">
-          <div class="icon"><i class="fa fa-th-large"></i></div>
-          <p>CSS3 / Sass</p>
-          <div class="progress css"></div>
-        </div>
-        <div class="js">
-          <div class="icon"><i class="fa fa-play-circle-o"></i></div>
-          <p>JavaScript / jQuery</p>
-          <div class="progress js"></div>
-        </div>
-        <div class="design">
-          <div class="icon"><i class="fa fa-picture-o"></i></div>
-          <p>Photoshop / Illustrator</p>
-          <div class="progress design"></div>
-        </div>
-      </div>
+    </div>
+    <div class="contactArea">
+      <h1>Contact Me</h1>
+      <p>E-mail： t30034a7@gmail.com</p>
+      <p>Tel： 0925-518-508</p>
     </div>
   </div>
-  <div class="rightsection" id="rightsection">
-    <div class="windows">
-      <p class="title">WORKS</p>
-      <div class="showbox">
-        <div class="window"><a href="https://hongyiliou.github.io/guitarstory/guitarstory-skrollr" target="_blank"><img src="./img/guitarstory.jpg" alt=""/></a></div>
-        <p class="workname">GuitarStory (Bootstrap)</p>
-        <p class="content">應用 Bootstrap(CSS框架) 結合 Skrollr.js 製作捲動式網頁。</p>
-      </div>
-      <div class="showbox">
-        <div class="window"><a href="https://hongyiliou.github.io/RWD_FBpage/RWD_FBpage" target="_blank"><img src="./img/RWD_FBpage.jpg" alt=""/></a></div>
-        <p class="workname">Facebook page (RWD)</p>
-        <p class="content">使用 CSS Media Queries 模仿臉書帳號頁面桌面/手機版變化製作 RWD 網頁。</p>
-      </div>
-      <div class="showbox">
-        <div class="window"><a href="https://hongyiliou.github.io/iphones/iphones" target="_blank"><img src="./img/iphone.jpg" alt=""/></a></div>
-        <p class="workname">iPhones</p>
-        <p class="content">使用 jQuery 切換 Class/CSS 製作，模擬手機切換型號/頁面。</p>
-      </div>
-      <div class="showbox">
-        <div class="window"><a href="https://hongyiliou.github.io/weatherbox/weatherbox" target="_blank"><img src="./img/weatherbox.jpg" alt=""/></a></div>
-        <p class="workname">WeatherBox 天氣盒子</p>
-        <p class="content">以 CSS 刻出動態互動天氣盒子(滑鼠移入/點擊互動)，並利用 jQuery 呈現現實時間。</p>
+  <article class="intro" id="intro">
+    <div class="container">
+      <div class="intro_content">
+        <div class="textArea">
+          <h1>Hong-Yi Liou</h1>
+          <p>劉弘翊，一年實務經驗的 Junior 前端工程師，熱愛音樂，樂於學習新技術。<br/>喜歡一點一滴累積完成一首曲子、一幅影像、一個網頁的成就感。好溝通、善於配合。</p>
+          <h2>Tools： HTML / Pug、CSS / Sass、Javascript / jQuery、Photoshop / Illustrator</h2>
+        </div>
+        <div class="photo"></div>
       </div>
     </div>
-    <div class="bottomsection">
-      <p class="copyright">Copyright © 2018 Hong-yi Liou All rights reserved.</p>
+  </article>
+  <article class="allworks" id="allworks">
+    <div class="container_narrow">
+      <div class="works_content">
+        <h1>作品集</h1>
+        <section class="works works-1"><a class="screenShot" href="https://hongyiliou.github.io/ButtonsDemo/" target="_blank"></a>
+          <h2 class="title">Buttons Demo</h2>
+          <p>獨立設計的按鈕 Demo 展示網頁，並結合 skrollr.js 製作動態效果。最上方的按鈕是純手刻的呦！  </p>
+        </section>
+        <section class="works works-2"><a class="screenShot" href="https://hongyiliou.github.io/weatherbox/" target="_blank"></a>
+          <h2 class="title">Weather Box</h2>
+          <p>以 CSS 刻出動態互動天氣盒子(滑鼠移入/點擊互動)，並利用 jQuery 呈現現實時間。</p>
+        </section>
+        <section class="works works-3"><a class="screenShot" href="https://hongyiliou.github.io/lightbox/" target="_blank"></a>
+          <h2 class="title">Lightbox</h2>
+          <p>Javascript 讀取 AJAX 資料製作圖片投影燈箱。</p>
+        </section>
+        <section class="works works-4"><a class="screenShot" href="https://hongyiliou.github.io/4numbers/" target="_blank"></a>
+          <h2 class="title">四個數字</h2>
+          <p>讀取輸入在 input 中的數字並顯示於手刻顯示器上、讀取顏色 input 來改變整個網頁的色彩樣式。</p>
+        </section>
+        <section class="works works-5"><a class="screenShot" href="https://hongyiliou.github.io/Buylist/" target="_blank"></a>
+          <h2 class="title">動態購物清單</h2>
+          <p>可自由增刪，並加總價格的購物清單。</p>
+        </section>
+        <section class="works works-6"><a class="screenShot" href="https://hongyiliou.github.io/iphones/" target="_blank"></a>
+          <h2 class="title">iPhones</h2>
+          <p>使用 jQuery 切換 css/class 製作，模擬手機切換型號/頁面。</p>
+        </section>
+      </div>
     </div>
-  </div>
-  <div class="gototop">
-    <p>TOP↑</p>
-  </div>
-  <script type="text/javascript" src="./assets/js/main.js"></script>
+  </article>
+  <article class="contact" id="contact">
+    <h1>E-mail： t30034a7@gmail.com</h1>
+    <h1>Tel： 0925-518-508</h1>
+    <ul class="social">
+      <li class="github"><a href="https://github.com/HongyiLiou" target="_blank" title="Github"></a></li>
+      <li class="codepen"><a href="https://codepen.io/HongyiLiou" target="_blank" title="Codepen"></a></li>
+      <li class="facebook"><a href="https://www.facebook.com/uchiha.zhu" target="_blank" title="Facebook"></a></li>
+      <li class="instagram"><a href="https://www.instagram.com/hongyi_liou" target="_blank" title="Instagram"></a></li>
+      <li class="youtube"><a href="https://goo.gl/vZ8g9S" target="_blank" title="Youtube"></a></li>
+    </ul>
+    <p>Hong-Yi Liou © 2019 All Rights Reserved</p>
+  </article>
+  <article class="topBtn" id="topBtn">
+    <p>TOP</p>
+  </article>
+  <script type="text/javascript" src="js/main.js" async="true"></script>
 </body>
