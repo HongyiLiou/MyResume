@@ -623,8 +623,14 @@ ul, li {
       background-size: 500%;
       border-radius: 14px;
       overflow: hidden;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s;
       -webkit-box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.7), inset 0 2px 3px rgba(255, 255, 255, 0.3);
       box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.7), inset 0 2px 3px rgba(255, 255, 255, 0.3); }
+      .contact .social li:hover {
+        -webkit-box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.7), inset 0 2px 30px rgba(255, 255, 255, 0.7);
+        box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.7), inset 0 2px 30px rgba(255, 255, 255, 0.7); }
       .contact .social li.github {
         background-position-x: 75%; }
       .contact .social li.codepen {

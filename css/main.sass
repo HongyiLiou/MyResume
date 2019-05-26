@@ -429,7 +429,11 @@
             background-size: 500%
             border-radius: 14px
             overflow: hidden
+            transition: 0.3s
             box-shadow: 2px 3px 5px rgba(#000, 0.7), inset 0 2px 3px rgba(#FFF, 0.3)
+
+            &:hover
+                box-shadow: 2px 3px 5px rgba(#000, 0.7), inset 0 2px 30px rgba(#FFF, 0.7)
 
             &.github
                 background-position-x: #{ 100% * 3 / 4 }
