@@ -718,7 +718,7 @@ ul, li {
     top: 35%;
     right: 5%; } }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 854px) {
   .header .container {
     width: 100%; }
     .header .container .header_content {
