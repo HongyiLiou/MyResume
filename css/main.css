@@ -59,7 +59,8 @@ input, button {
 html, body {
   margin: 0;
   padding: 0;
-  width: 100%; }
+  width: 100%;
+    width-font-size: 16px; }
 
 ul, li {
   list-style: none;
@@ -711,3 +712,16 @@ ul, li {
     justify-content: center; }
     .allworks .works_content .works {
       margin: 70px 500px 0 500px; } }
+
+@media screen and (max-width: 1176px) {
+  .head .contactArea {
+    top: 35%;
+    right: 5%; } }
+
+@media screen and (max-width: 768px) {
+  .header .container {
+    width: 100%; }
+    .header .container .header_content {
+      padding-left: 30px; }
+  .head .contactArea {
+    display: none; } }
