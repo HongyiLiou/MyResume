@@ -55,7 +55,7 @@ window.addEventListener('scroll', function(){
 
 
 
-// topBtn 回到頂端按鈕 ________________________________________________。<>>
+// topBtn 回到頂端按鈕 _________________________________________________。<>>
 $('#topBtn').click(function(){  //回到頂端按鈕
     $('html,body').animate({
         scrollTop: 0
@@ -71,7 +71,7 @@ function topBtnReload(){
 
 
 
-// Nav 導航按鈕 _______________________________________________________。<>>
+// Nav 導航按鈕 ________________________________________________________。<>>
 $('#intro_nav').click(function(){
     $('html,body').animate({scrollTop:$('#intro').offset().top - 100},500)
 })
