@@ -105,6 +105,7 @@
     position: relative
     +size(100%, 600px)
     background: url(../images/headBg-w.png) center center no-repeat
+    background-size: cover
 
     .me
         position: absolute
@@ -529,3 +530,98 @@
     .head
         .contactArea
             display: none
+
+// RWD-mobile 手機
+@media screen and (max-width: 690px)
+    .header
+        .header_content
+            a
+                font-size: 25px
+            .nav
+                display: none
+    .head
+        +size(100%, 480px)
+        background: url(../images/headBg-m.png) bottom center no-repeat
+        .me
+            +size(120px, 120px)
+            &::before,&::after
+                +size(60px, 1px)
+            &::before
+                transform: rotate(45deg) translate(-35px, 22px)
+            &::after
+                transform: rotate(45deg) translate(-15px, 30px)
+            .me_border
+                +size(120px, 120px)
+                &::before
+                    +size(40px, 1px)
+                    transform: rotate(45deg) translate(180px, 12px)
+                &::after
+                    +size(60px, 1px)
+                    transform: rotate(45deg) translate(150px, 25px)
+            .textArea
+                bottom: -100px
+                h1
+                    font-size: 20px
+                    margin-bottom: 15px
+                span
+                    font-size: 14px
+    .intro
+        .intro_content
+            padding-top: 20px
+            .textArea
+                h1
+                    font-size: 25px
+                p
+                    font-size: 14px
+                    line-height: 28px
+                    letter-spacing: initial
+                h2
+                    letter-spacing: initial
+                    font-size: 12px
+            .photo
+                min-width: initial
+                +size(100%, 180px)
+    .allworks
+        padding: 40px 0
+        .works_content
+            h1
+                font-size: 25px
+            .works
+                margin: auto
+                .screenShot
+                    +size(100%, 160px)
+                .title
+                    font-size: 20px
+                    height: 25px
+                    line-height: 20px
+                    letter-spacing: initial
+                    border-bottom: solid 1px rgba(#EDEEEA, 0.3)
+                p
+                    font-size: 12px
+                    line-height: 24px
+                    margin-bottom: 40px
+    .contact
+        &::before
+            +size(200px, 100px)
+            top: -84px
+        h1
+            font-size: 16px
+            font-weight: bold
+        .social
+            width: 80%
+            margin-top: 25px
+            li
+                +size(45px, 45px)
+                border-radius: 10px
+        p
+            margin-top: 60px
+            font-size: 12px
+    .topBtn
+        bottom: 4%
+        right: 4%
+        +size(40px, 40px)
+        &::before
+            +size(60px, 60px)
+        p
+            font-size: 14px
+            line-height: 42px

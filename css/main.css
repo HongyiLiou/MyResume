@@ -256,7 +256,8 @@ ul, li {
   position: relative;
   width: 100%;
   height: 600px;
-  background: url(../images/headBg-w.png) center center no-repeat; }
+  background: url(../images/headBg-w.png) center center no-repeat;
+  background-size: cover; }
   .head .me {
     position: absolute;
     width: 200px;
@@ -725,3 +726,111 @@ ul, li {
       padding-left: 30px; }
   .head .contactArea {
     display: none; } }
+
+@media screen and (max-width: 690px) {
+  .header .header_content a {
+    font-size: 25px; }
+  .header .header_content .nav {
+    display: none; }
+  .head {
+    width: 100%;
+    height: 480px;
+    background: url(../images/headBg-m.png) bottom center no-repeat; }
+    .head .me {
+      width: 120px;
+      height: 120px; }
+      .head .me::before, .head .me::after {
+        width: 60px;
+        height: 1px; }
+      .head .me::before {
+        -webkit-transform: rotate(45deg) translate(-35px, 22px);
+        -ms-transform: rotate(45deg) translate(-35px, 22px);
+        transform: rotate(45deg) translate(-35px, 22px); }
+      .head .me::after {
+        -webkit-transform: rotate(45deg) translate(-15px, 30px);
+        -ms-transform: rotate(45deg) translate(-15px, 30px);
+        transform: rotate(45deg) translate(-15px, 30px); }
+      .head .me .me_border {
+        width: 120px;
+        height: 120px; }
+        .head .me .me_border::before {
+          width: 40px;
+          height: 1px;
+          -webkit-transform: rotate(45deg) translate(180px, 12px);
+          -ms-transform: rotate(45deg) translate(180px, 12px);
+          transform: rotate(45deg) translate(180px, 12px); }
+        .head .me .me_border::after {
+          width: 60px;
+          height: 1px;
+          -webkit-transform: rotate(45deg) translate(150px, 25px);
+          -ms-transform: rotate(45deg) translate(150px, 25px);
+          transform: rotate(45deg) translate(150px, 25px); }
+      .head .me .textArea {
+        bottom: -100px; }
+        .head .me .textArea h1 {
+          font-size: 20px;
+          margin-bottom: 15px; }
+        .head .me .textArea span {
+          font-size: 14px; }
+  .intro .intro_content {
+    padding-top: 20px; }
+    .intro .intro_content .textArea h1 {
+      font-size: 25px; }
+    .intro .intro_content .textArea p {
+      font-size: 14px;
+      line-height: 28px;
+      letter-spacing: initial; }
+    .intro .intro_content .textArea h2 {
+      letter-spacing: initial;
+      font-size: 12px; }
+    .intro .intro_content .photo {
+      min-width: initial;
+      width: 100%;
+      height: 180px; }
+  .allworks {
+    padding: 40px 0; }
+    .allworks .works_content h1 {
+      font-size: 25px; }
+    .allworks .works_content .works {
+      margin: auto; }
+      .allworks .works_content .works .screenShot {
+        width: 100%;
+        height: 160px; }
+      .allworks .works_content .works .title {
+        font-size: 20px;
+        height: 25px;
+        line-height: 20px;
+        letter-spacing: initial;
+        border-bottom: solid 1px rgba(237, 238, 234, 0.3); }
+      .allworks .works_content .works p {
+        font-size: 12px;
+        line-height: 24px;
+        margin-bottom: 40px; }
+  .contact::before {
+    width: 200px;
+    height: 100px;
+    top: -84px; }
+  .contact h1 {
+    font-size: 16px;
+    font-weight: bold; }
+  .contact .social {
+    width: 80%;
+    margin-top: 25px; }
+    .contact .social li {
+      width: 45px;
+      height: 45px;
+      border-radius: 10px; }
+  .contact p {
+    margin-top: 60px;
+    font-size: 12px; }
+  .topBtn {
+    bottom: 4%;
+    right: 4%;
+    width: 40px;
+    height: 40px; }
+    .topBtn::before {
+      width: 60px;
+      height: 60px; }
+    .topBtn p {
+      font-size: 14px;
+      line-height: 42px; } }
