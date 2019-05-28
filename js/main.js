@@ -71,7 +71,7 @@ function topBtnReload(){
 
 
 
-// Nav 導航按鈕 ________________________________________________________。<>>
+// Nav、Hamburger 導航按鈕 ________________________________________________________。<>>
 $('#intro_nav').click(function(){
     $('html,body').animate({scrollTop:$('#intro').offset().top - 100},500)
 })
@@ -80,6 +80,36 @@ $('#works_nav').click(function(){
 })
 $('#contact_nav').click(function(){
     $('html,body').animate({scrollTop:$('#contact').offset().top},500)
+})
+
+
+$('#intro_list').click(function(){
+    $('html,body').animate({scrollTop:$('#intro').offset().top - 60},500)
+    $('.hamburger,.hamburgerFull,.hamburgerList').removeClass('active')
+})
+$('#works_list').click(function(){
+    $('html,body').animate({scrollTop:$('#allworks').offset().top - 50},500)
+    $('.hamburger,.hamburgerFull,.hamburgerList').removeClass('active')
+})
+$('#contact_list').click(function(){
+    $('html,body').animate({scrollTop:$('#contact').offset().top},500)
+    $('.hamburger,.hamburgerFull,.hamburgerList').removeClass('active')
+})
+$('.hamburgerFull,.resume_list,.return_list').click(function(){
+    $('.hamburger,.hamburgerFull,.hamburgerList').removeClass('active')
+})
+
+
+
+// hamburger 漢堡選單 __________________________________________________。<>>
+const hamburger = document.querySelector('.hamburger')
+const hamburgerFull = document.querySelector('.hamburgerFull')
+const hamburgerList = document.querySelector('.hamburgerList')
+
+hamburger.addEventListener('click', function(){
+    hamburger.classList.add('active')
+    hamburgerFull.classList.add('active')
+    hamburgerList.classList.add('active')
 })
 
 

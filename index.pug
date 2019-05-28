@@ -6,7 +6,7 @@ head
     link(rel="stylesheet" type="text/css" href="css/main.css")
     link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
     script(type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
-    script(type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js")
+    //- script(type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js")
     
     title 劉弘翊 Hong-Yi Liou | Front-end Developer
 body
@@ -21,6 +21,8 @@ body
                     li#works_nav.navBtn 作品集
                     li#contact_nav.navBtn 聯繫我
                     li.navBtn 履歷表
+                //- 漢堡選單
+                .hamburger
     .head
         .me
             .me_border
@@ -94,6 +96,17 @@ body
     //- 回頂端按鈕
     article#topBtn.topBtn
         p TOP
+
+    //- 手機版漢堡選單展開
+    article.hamburgerFull
+    article.hamburgerList
+        img.hamburgerListImg(src="../images/hamburgerList-1.png")
+        ul.hamburgerList_nav
+            li#intro_list.intro_list 關於我 - About Me
+            li#works_list.works_list 作品集 - Works
+            li#contact_list.contact_list 聯繫我 - Contact Me
+            li.resume_list 履歷表 - My Resume
+            li.return_list 返回 - Back
 
 
 
