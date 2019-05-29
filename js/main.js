@@ -123,6 +123,13 @@ hamburger.addEventListener('click', function(){
 })
 
 
+// 圖片預載
+function preloadImg(image) {
+    var img = new Image();
+    img.src = image;
+   }
+ 
+   
 
 
 
@@ -130,6 +137,11 @@ hamburger.addEventListener('click', function(){
 
 
 window.onload = function(){
-    fadeIn()
-    topBtnReload()
+    fadeIn();
+    topBtnReload();
+    preloadImg('./images/hamburgerList-1.png');
+    preloadImg('./images/hamburgerList-2.png');
+    preloadImg('./images/hamburgerList-3.png');
+    preloadImg('./images/hamburgerList-4.png');
+    preloadImg('./images/hamburgerList-5.png');
 }
