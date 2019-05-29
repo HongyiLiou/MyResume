@@ -105,12 +105,27 @@ $('.hamburgerFull,.resume_list,.return_list').click(function(){
 const hamburger = document.querySelector('.hamburger')
 const hamburgerFull = document.querySelector('.hamburgerFull')
 const hamburgerList = document.querySelector('.hamburgerList')
+const hamburgerListImg = document.querySelector('.hamburgerListImg')
+const hamburgerListImgs = [
+    { value: 1, src: './images/hamburgerList-1.png' },
+    { value: 2, src: './images/hamburgerList-2.png' },
+    { value: 3, src: './images/hamburgerList-3.png' },
+    { value: 4, src: './images/hamburgerList-4.png' },
+    { value: 5, src: './images/hamburgerList-5.png' }
+]
 
 hamburger.addEventListener('click', function(){
-    hamburger.classList.add('active')
-    hamburgerFull.classList.add('active')
-    hamburgerList.classList.add('active')
+    let x = Math.ceil(Math.ceil(Math.random() * 10) / 2) - 1;
+    hamburger.classList.add('active');
+    hamburgerFull.classList.add('active');
+    hamburgerList.classList.add('active');
+    hamburgerListImg.setAttribute('src', hamburgerListImgs[x].src)
 })
+
+
+
+
+
 
 
 
