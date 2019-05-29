@@ -182,8 +182,10 @@ ul, li {
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s; }
-  .header.active .background {
-    opacity: 0.9; }
+  .header.active {
+    top: 0; }
+    .header.active .background {
+      opacity: 0.9; }
   .header .header_content {
     display: -webkit-box;
     display: -ms-flexbox;
