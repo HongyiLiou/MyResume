@@ -103,28 +103,30 @@
 
         .hamburger
             position: relative
-            +size(30px, 4px)
+            +size(28px, 4px)
             background: #EDEEEA
             display: none
             pointer-events: none
             transition: 0.5s
             opacity: 1
             pointer-events: auto
+            box-shadow: 0 0 5px rgba(#FFF, 0.7)
+            animation: hamburger 1.5s infinite
+
+            &::before, &::after
+                content: ""
+                position: absolute
+                +size(28px, 4px)
+                background: #EDEEEA
+                left: 0
+                box-shadow: 0 0 5px rgba(#FFF, 0.7)
+                animation: hamburger 1.5s infinite
 
             &::before
-                content: ""
-                position: absolute
-                +size(30px, 4px)
-                background: #EDEEEA
                 top: -10px
-                left: 0
+
             &::after
-                content: ""
-                position: absolute
-                +size(30px, 4px)
-                background: #EDEEEA
                 bottom: -10px
-                left: 0
 
             &.active
                 opacity: 0
@@ -669,6 +671,8 @@
                 transform: rotate(45deg) translate(-15px, 30px)
             .me_border
                 +size(120px, 120px)
+                top: -2px
+                left: -5px
                 &::before
                     +size(40px, 1px)
                     transform: rotate(45deg) translate(180px, 12px)
@@ -698,6 +702,10 @@
             .photo
                 min-width: initial
                 +size(100%, 180px)
+                &::before
+                    top: -6px
+                    left: -6px
+                    border-width: 1px
     .allworks
         padding: 40px 0
         background: url(../images/worksBg-m.png) 70% center no-repeat
@@ -709,6 +717,9 @@
                 margin: auto
                 .screenShot
                     +size(100%, 160px)
+                    &::before
+                        top: -6px
+                        left: -6px
                 .title
                     font-size: 20px
                     height: 25px

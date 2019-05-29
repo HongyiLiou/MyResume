@@ -114,12 +114,19 @@ const hamburgerListImgs = [
     { value: 5, src: './images/hamburgerList-5.png' }
 ]
 
+let x = 0;
+
 hamburger.addEventListener('click', function(){
-    let x = Math.ceil(Math.ceil(Math.random() * 10) / 2) - 1;
+    let y = Math.ceil(Math.ceil(Math.random() * 10) / 2) - 1;
+    while(y === x) {
+        y = Math.ceil(Math.ceil(Math.random() * 10) / 2) - 1;
+    }
+    x = y;
+    
     hamburger.classList.add('active');
     hamburgerFull.classList.add('active');
     hamburgerList.classList.add('active');
-    hamburgerListImg.setAttribute('src', hamburgerListImgs[x].src)
+    hamburgerListImg.setAttribute('src', hamburgerListImgs[y].src)
 })
 
 
