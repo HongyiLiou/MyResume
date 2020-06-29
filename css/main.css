@@ -572,6 +572,9 @@ ul, li {
       .allworks .works_content .works-6 a {
         background: url(../images/work6_iphones.png) center center no-repeat;
         background-size: cover; }
+      .allworks .works_content .works-7 a {
+        background: url(../images/work7_balanceSheet.png) center center no-repeat;
+        background-size: cover; }
       .allworks .works_content .works.fadeIn {
         opacity: 1;
         -webkit-transform: translateY(0px);
