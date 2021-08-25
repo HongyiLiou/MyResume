@@ -34,8 +34,7 @@
     .background
         position: absolute
         +size(100%, 100%)
-        background: linear-gradient(to right,#2F221D 20%, #221B15, #1A1612, #1E1512,
-        #1E1512, #1A1612, #221B15, #2F221D 80%)
+        background: linear-gradient(to right,#2F221D 20%, #221B15, #1A1612, #1E1512, #1E1512, #1A1612, #221B15, #2F221D 80%)
         box-shadow: 0 5px 15px rgba(#1E1512, 0.7)
         pointer-events: none
         opacity: 0
@@ -283,6 +282,21 @@
                 margin-top: 20px
                 color: #a55c27
 
+            .myResumeBtn
+                position: relative
+                margin-top: 15px
+                padding: 5px 12px
+                font-size: 14px
+                border-radius: 100px
+                color: #4d2500
+                border: solid 1px #4d2500
+                cursor: pointer
+                transition: 0.1s
+                &:hover
+                    background: #4d2500
+                    border-color: #4d2500
+                    color: #FFF
+
         .photo
             position: relative
             +size(620px, 350px)
@@ -365,6 +379,10 @@
                 a
                     background: url(../images/work6_iphones.png) center center no-repeat
                     background-size: cover
+            &-7
+                a
+                    background: url(../images/work7_balanceSheet.png) center center no-repeat
+                    background-size: cover
 
             &.fadeIn
                 opacity: 1
@@ -433,8 +451,7 @@
 .contact
     position: relative
     width: 100%
-    background: linear-gradient(to right,#2F221D 20%, #221B15, #1A1612, #1E1512,
-    #1E1512, #1A1612, #221B15, #2F221D 80%)
+    background: linear-gradient(to right,#2F221D 20%, #221B15, #1A1612, #1E1512, #1E1512, #1A1612, #221B15, #2F221D 80%)
     border-top: solid 1px #917e74
     padding-bottom: 20px
 

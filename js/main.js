@@ -134,9 +134,8 @@ hamburger.addEventListener('click', function(){
 function preloadImg(image) {
     var img = new Image();
     img.src = image;
-   }
- 
-   
+}
+
 
 
 
